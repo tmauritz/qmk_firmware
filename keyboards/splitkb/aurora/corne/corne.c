@@ -184,7 +184,7 @@ static void render_logo(void) {
 }
 
 static void render_logo_text(void) {
-    oled_write_P(PSTR("corne"), false);
+    oled_write_P(PSTR("Monke"), false);
 }
 
 static void render_kb_LED_state(void) {
@@ -236,8 +236,8 @@ bool oled_task_kb(void) {
     if (is_keyboard_master()) {
         // Renders the current keyboard state (layers and mods)
         render_logo();
-        render_logo_text();
         render_space();
+        render_logo_text();
         render_layer_state();
         render_space();
         render_mod_status_gui_alt(get_mods()|get_oneshot_mods());
@@ -293,19 +293,19 @@ bool encoder_update_kb(uint8_t index, bool clockwise) {
     }
     // 0 is left-half encoder,
     // 1 is right-half encoder
-    if (index == 0) {
+    if (index == 1) {
         // Volume control
         if (clockwise) {
             tap_code(KC_VOLU);
         } else {
             tap_code(KC_VOLD);
         }
-    } else if (index == 1) {
-        // Page up/Page down
+    } else if (index == 0) {
+        // scroll up/down
         if (clockwise) {
-            tap_code(KC_PGDN);
+            tap_code(KC_WH_D);
         } else {
-            tap_code(KC_PGUP);
+            tap_code(KC_WH_U);
         }
     }
     return true;
