@@ -17,12 +17,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT_split_3x6_3(
         KC_TAB,        DE_Q, DE_W, DE_E, DE_R, DE_T,      DE_Z, DE_U, DE_I,    DE_O,   DE_P,    KC_BSPC,
         CTL_T(KC_ESC), DE_A, DE_S, DE_D, DE_F, DE_G,      DE_H, DE_J, DE_K,    DE_L,   DE_ODIA, DE_ADIA,
-        KC_LSFT,       DE_Y, DE_X, DE_C, DE_V, DE_B,      DE_N, DE_M, DE_COMM, DE_DOT, DE_MINS, DE_UDIA,
+        KC_LSFT,       DE_Y, DE_X, DE_C, DE_V, DE_B,      DE_N, DE_M, DE_COMM, DE_DOT, DE_MINS, CTL_T(DE_UDIA),
                             KC_LGUI, MO(1), KC_ENT,      KC_SPC, MO(2), KC_RALT
-        ),  
+        ),
     [1] = LAYOUT_split_3x6_3(
         DE_CIRC,  DE_1,     DE_2,      DE_3,    DE_4,    DE_5,       DE_6,    DE_7,    DE_8,    DE_9,    DE_0,    KC_BSPC,
-        KC_LCTL,  KC_NO,    KC_HOME,   KC_UP,   KC_END,  KC_NO,      KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_NO,   DE_SS, 
+        KC_LCTL,  KC_DEL,    KC_HOME,   KC_UP,   KC_END,  KC_NO,      KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_NO,   DE_SS,
         KC_LSFT,  KC_PSCR,  KC_LEFT,   KC_DOWN, KC_RGHT, KC_NO,      DE_LABK, DE_ASTR, DE_PLUS, DE_RABK, KC_NO, DE_TILD,
                                     KC_LGUI, KC_TRNS,   KC_ENT,      KC_SPC, MO(3), KC_RALT
         ),
@@ -46,4 +46,4 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 
 };
 #endif // defined(ENCODER_ENABLE) && defined(ENCODER_MAP_ENABLE
-//  
+//
