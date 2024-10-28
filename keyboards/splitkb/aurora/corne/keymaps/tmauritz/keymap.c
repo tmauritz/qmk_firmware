@@ -29,7 +29,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [2] = LAYOUT_split_3x6_3(
         DE_DEG,  DE_EXLM, DE_DQUO, DE_SECT, DE_DLR, DE_PERC,    DE_AMPR, DE_SLSH, DE_LPRN, DE_RPRN, DE_EQL, KC_BSPC,
         KC_LCTL, DE_SUP2, DE_SUP3, KC_NO,   KC_NO,  KC_NO,      DE_GRV,  DE_LCBR, DE_LBRC, DE_RBRC, DE_RCBR, DE_BSLS,
-        KC_LSFT, KC_NO,   KC_NO,   KC_NO,   KC_NO,  KC_NO,      DE_PIPE, DE_ASTR, DE_PLUS, DE_HASH, DE_QUOT, DE_TILD,
+        KC_LSFT, KC_NO,   KC_NO,   KC_NO,   KC_NO,  KC_NO,      DE_PIPE, DE_ASTR, DE_PLUS, DE_HASH, DE_QUOT, DE_QUES,
                                     KC_LGUI, MO(3), KC_ENT,     KC_SPC,  KC_TRNS, KC_RALT
         ),
     [3] = LAYOUT_split_3x6_3(
