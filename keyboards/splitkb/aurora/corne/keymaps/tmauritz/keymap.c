@@ -16,20 +16,20 @@
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT_split_3x6_3(
         KC_TAB,        DE_Q, DE_W, DE_E, DE_R, DE_T,      DE_Z, DE_U, DE_I,    DE_O,   DE_P,    KC_BSPC,
-        CTL_T(KC_ESC), DE_A, DE_S, DE_D, DE_F, DE_G,      DE_H, DE_J, DE_K,    DE_L,   DE_ODIA, DE_ADIA,
-        KC_LSFT,       DE_Y, DE_X, DE_C, DE_V, DE_B,      DE_N, DE_M, DE_COMM, DE_DOT, DE_MINS, CTL_T(DE_UDIA),
+        CTL_T(KC_ESC), DE_A, DE_S, DE_D, DE_F, DE_G,      DE_H, DE_J, DE_K,    DE_L,   DE_ODIA, CTL_T(DE_ADIA),
+        LSFT_T(KC_DEL),DE_Y, DE_X, DE_C, DE_V, DE_B,      DE_N, DE_M, DE_COMM, DE_DOT, DE_MINS, RSFT_T(DE_UDIA),
                             KC_LGUI, MO(1), KC_ENT,      KC_SPC, MO(2), KC_RALT
         ),
     [1] = LAYOUT_split_3x6_3(
-        DE_CIRC,  DE_1,     DE_2,      DE_3,    DE_4,    DE_5,       DE_6,    DE_7,    DE_8,    DE_9,    DE_0,    KC_BSPC,
+        DE_DEG,  DE_1,     DE_2,      DE_3,    DE_4,    DE_5,       DE_6,    DE_7,    DE_8,    DE_9,    DE_0,    KC_BSPC,
         KC_LCTL,  KC_DEL,    KC_HOME,   KC_UP,   KC_END,  KC_NO,      KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_NO,   DE_SS,
-        KC_LSFT,  KC_PSCR,  KC_LEFT,   KC_DOWN, KC_RGHT, KC_NO,      DE_LABK, DE_ASTR, DE_PLUS, DE_RABK, KC_NO, DE_TILD,
+        KC_LSFT,  KC_PSCR,  KC_LEFT,   KC_DOWN, KC_RGHT, DE_PIPE,      DE_HASH, DE_ASTR, DE_COMM, DE_DOT, DE_HASH, DE_TILD,
                                     KC_LGUI, KC_TRNS,   KC_ENT,      KC_SPC, MO(3), KC_RALT
         ),
     [2] = LAYOUT_split_3x6_3(
-        DE_DEG,  DE_EXLM, DE_DQUO, DE_SECT, DE_DLR, DE_PERC,    DE_AMPR, DE_SLSH, DE_LPRN, DE_RPRN, DE_EQL, KC_BSPC,
+        DE_CIRC,  DE_EXLM, DE_DQUO, DE_SECT, DE_DLR, DE_PERC,    DE_AMPR, DE_SLSH, DE_LPRN, DE_RPRN, DE_EQL, KC_BSPC,
         KC_LCTL, DE_SUP2, DE_SUP3, KC_NO,   KC_NO,  KC_NO,      DE_GRV,  DE_LCBR, DE_LBRC, DE_RBRC, DE_RCBR, DE_BSLS,
-        KC_LSFT, KC_NO,   KC_NO,   KC_NO,   KC_NO,  KC_NO,      DE_PIPE, DE_ASTR, DE_PLUS, DE_HASH, DE_QUOT, DE_QUES,
+        KC_LSFT, KC_NO,   KC_NO,   KC_NO,   KC_NO,  KC_NO,      DE_ASTR, DE_PLUS, DE_LABK, DE_RABK, DE_QUOT, DE_QUES,
                                     KC_LGUI, MO(3), KC_ENT,     KC_SPC,  KC_TRNS, KC_RALT
         ),
     [3] = LAYOUT_split_3x6_3(
