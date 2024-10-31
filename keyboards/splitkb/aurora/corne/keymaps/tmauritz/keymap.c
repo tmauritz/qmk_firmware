@@ -34,8 +34,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         ),
     [3] = LAYOUT_split_3x6_3(
         KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5, KC_F6,   KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12,
-        RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO,  KC_NO,  KC_NO,
-        RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, KC_NO, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO,  KC_NO,  QK_BOOT,
+        RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, RGB_M_B, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO,  KC_NO,  KC_NO,
+        RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, RGB_M_P, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO,  KC_NO,  QK_BOOT,
                                 KC_LGUI, KC_TRNS, KC_ENT,   KC_SPC, KC_TRNS, KC_RALT
         )
 };
@@ -46,4 +46,4 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
 
 };
 #endif // defined(ENCODER_ENABLE) && defined(ENCODER_MAP_ENABLE
-//
+
