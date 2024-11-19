@@ -23,7 +23,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [1] = LAYOUT_split_3x6_3(
         DE_DEG,  DE_1,     DE_2,      DE_3,    DE_4,    DE_5,       DE_6,    DE_7,    DE_8,    DE_9,    DE_0,    KC_BSPC,
         KC_LCTL,  KC_DEL,    KC_HOME,   KC_UP,   KC_END,  KC_NO,      KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_NO,   DE_SS,
-        KC_LSFT,  KC_PSCR,  KC_LEFT,   KC_DOWN, KC_RGHT, DE_PIPE,      DE_HASH, DE_ASTR, DE_COMM, DE_DOT, DE_HASH, DE_TILD,
+        KC_LSFT,  KC_PSCR,  KC_LEFT,   KC_DOWN, KC_RGHT, DE_PIPE,      DE_HASH, DE_ASTR, DE_COMM, DE_DOT, DE_MINS, DE_TILD,
                                     KC_LGUI, KC_TRNS,   KC_ENT,      KC_SPC, MO(3), KC_RALT
         ),
     [2] = LAYOUT_split_3x6_3(
