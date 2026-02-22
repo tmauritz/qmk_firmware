@@ -15,10 +15,10 @@
 //clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT_split_3x6_3(
-        KC_TAB,        DE_Q, DE_W, DE_E, DE_R, DE_T,      DE_Z, DE_U, DE_I,    DE_O,   DE_P,    KC_BSPC,
-        CTL_T(KC_ESC), DE_A, DE_S, DE_D, DE_F, DE_G,      DE_H, DE_J, DE_K,    DE_L,   DE_ODIA, CTL_T(DE_ADIA),
+        KC_TAB,        DE_Q, DE_W, DE_E, DE_R, DE_T,      DE_Z, DE_U, DE_I,    DE_O,   DE_P, ALT_T(KC_BSPC),
+        CTL_T(KC_ESC), DE_A, DE_S, DE_D, DE_F, DE_G,      DE_H, DE_J, DE_K, DE_L, DE_ODIA, CTL_T(DE_ADIA),
         LSFT_T(KC_DEL),DE_Y, DE_X, DE_C, DE_V, DE_B,      DE_N, DE_M, DE_COMM, DE_DOT, DE_MINS, RSFT_T(DE_UDIA),
-                            KC_LGUI, MO(1), KC_ENT,      KC_SPC, MO(2), KC_RALT
+                            KC_LGUI, MO(1), KC_ENT,      KC_SPC, LT(2, KC_BSPC), KC_RALT
         ),
     [1] = LAYOUT_split_3x6_3(
         DE_DEG,  DE_1,     DE_2,      DE_3,    DE_4,    DE_5,       DE_6,    DE_7,    DE_8,    DE_9,    DE_0,    KC_BSPC,
@@ -34,8 +34,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         ),
     [3] = LAYOUT_split_3x6_3(
         KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5, KC_F6,   KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12,
-        RGB_TOG, RGB_HUI, RGB_SAI, RGB_VAI, RGB_M_B, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO,  KC_NO,  KC_NO,
-        RGB_MOD, RGB_HUD, RGB_SAD, RGB_VAD, RGB_M_P, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO,  KC_NO,  QK_BOOT,
+        RM_TOGG, RM_HUEU, RM_SATU, RM_VALU, RGB_M_B, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO,  KC_NO,  KC_NO,
+        RM_NEXT, RM_HUED, RM_SATD, RM_VALD, RGB_M_P, KC_NO,   KC_NO, KC_NO, KC_NO, KC_NO,  KC_NO,  QK_BOOT,
                                 KC_LGUI, KC_TRNS, KC_ENT,   KC_SPC, KC_TRNS, KC_RALT
         )
 };
